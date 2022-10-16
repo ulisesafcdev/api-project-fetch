@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">
+      <p>API</p>
+    </div>
+    <div class="nav-links">
+      <a href="#">About</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="header-text">
+        <p class="header-title">Request API with Fetch</p>
+        <p>
+          Implementing request with the object xmlHttpRequest and show data in the web page using API with
+          fakestoreapi.com
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <template id="template-card">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img id="link-img" class="activator responsive-img" alt="product">
+        </div>
+        <div class="card-content">
+          <p id="title" class="card-title"></p>
+          <span class="card-title activator"><i class='bx bx-show right'></i></span>
+          <i class='bx bx-closet'></i>
+          <p id="category"></p>
+        </div>
+        <div class="card-action">
+          <p>Precio: <span id="precio" class="badge teal white-text"></span></p>
+        </div>
+        <div class="card-reveal">
+          <p class="card-title">Description</p>
+          <span class="card-title"><i class='bx bx-x-circle right'></i></span>
+          <br>
+          <p id="description"></p>
+        </div>
+      </div>
+    </template>
+
+    <section>
+      <blockquote>
+        Using CSS3 and CSS framework Materialize for some styles, also using HTML Templates for use content dynamic with Javascript.
+      </blockquote>
+      <blockquote>
+        I did it with much love for all yours for implement a request to API fake from <a href="https://fakestoreapi.com/" target="_blank">fakestoreapi.com</a> with the API <i>Fetch</i>.
+      </blockquote>
+    </section>
+    <section>
+      <h3>Offert Products available</h3>
+      <hr>
+      <div class="product-container"></div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer green black-text lighten-4 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-l12">
+          <h6>Created by <a href="https://ulisesafcdev.github.io" target="_blank" class="black-text text-lighten-5">@ulisesafcdev</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+        &copy; 2022 Copyright
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
